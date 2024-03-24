@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeChallenge Wk1 Phase-1</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <!-- Challenge 1: A program that propmts the user to enter student marks and display grade as A, B, C, D OR E based on marks attained-->
+    <div class="section">
+      <h1>Student Grade Generator</h1>
+      <form>
+        <!-- form for allowing the user to enter student marrks -->
+        <label for="marks">Enter student marks:</label>
+        <input type="number" id="marks" />
+      </form>
+      <!-- Button for displaying grade attained by student based on the marks -->
+      <button type="submit" id="grading" onclick="printGrade()">Grading</button>
+      <h2 id="Results">Your Results Is:</h2>
+
+      <!-- link html to javascript file -->
+      <script src="./grade.js"></script>
+    </div>
+    <!-- Challenge 1: A program that propmts the user to enter student marks and display grade as A, B, C, D OR E based on marks attained -->
+    <div class="section">
+      <h1>Speed Detector</h1>
+      <!-- form for allowing the user to cars speed -->
+      <label for="marks">Enter student marks:</label>
+      <form>
+        <label for="speed">Enter Speed</label>
+        <input type="number" id="speed" />
+      </form>
+      <!-- Button for calculating cars speed-->
+      <button type="submit" id="calculateSpeed" onclick="displaySpeed()">
+        Calculate Speed
+      </button>
+      <!-- this h2 is meant to display the points after calculating cars speed and display licence status if the pints are greater than 12 -->
+      <h2 id="points">Speed Limit Points:</h2>
+      <!-- link to the js file -->
+      <script src=" ./speed.js"></script>
+    </div>
+    <!-- Challenge 3: A program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary. -->
+    <div class="section">
+      <h1>Net Salary Calculator</h1>
+      <form>
+        <!-- Form for to allow the user to enter their basic salary -->
+        <label>Enter Basic Salary</label>
+        <input type="number" id="basicSalary" />
+        <label>Benefits</label>
+        <input type="number" id="benefits" />
+      </form>
+      <!-- button for displaying outputs -->
+      <button type="button" onclick="displaySalary()">Display Salary</button>
+      <p id="grossSalary">Gross Salary</p>
+      <p id="payeeTax">PAYEE Tax</p>
+      <p id="nhifDeduction">NHIF Deductions</p>
+      <p id="nssfDeduction">NSSF Deductions</p>
+      <p id="netSalary">Net Salary</p>
+      <!-- link to js file -->
+      <script src="./netSalaryCalculator.js"></script>
+    </div>
+  </body>
+</html>
